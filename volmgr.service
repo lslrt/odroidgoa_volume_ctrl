@@ -1,0 +1,13 @@
+[Unit]
+Description=ODROID Volume manager
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+ExecStart=/usr/bin/vol
+Restart=on-failure
+
+
+[Install]
+WantedBy=multi-user.target
